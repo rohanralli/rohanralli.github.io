@@ -3,31 +3,120 @@
     <head>
         <meta charset="utf-8">
         <title>Personal Portfolio Website</title>
-        <style>
-            h1{
-                text-align:center;
+        <script>
+          function changeDescription() {
+            if (document.getElementById("button1").innerHTML == "Rohan!"){
+                document.getElementById("button1").innerHTML = "an upcoming CS Major!";
+                document.getElementById("button1").style.height = "80px";
             }
-            #mepic{
+            else if(document.getElementById("button1").innerHTML == "an upcoming CS Major!"){
+              document.getElementById("button1").innerHTML = "a machine learning student!";
+              document.getElementById("button1").style.height = "80px";
+            }
+            else{
+                document.getElementById("button1").innerHTML = "Rohan!";
+                document.getElementById("button1").style.height = "50px";
+            }
+          }
+        </script>
+        <style>
+          video {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index:0;
+                }
+          .video-wrapper {
+                /* Telling our absolute positioned video to 
+                be relative to this element */
+                position: relative;
+
+                width: 100%;
+                height: 1000px;
+
+                /* Will not allow the video to overflow the 
+                container */
+                overflow: hidden;
+
+                /* Centering the container's content vertically 
+                and horizontally */
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+          body{
+            background-color:rgb(25,210,50);
+          }
+          h1{
+                text-align:center;
                 position:relative;
-                left:50%;
+            }
+          #greeting{
+            position:absolute;
+            text-align:center;
+            top:30%;
+            left:47%;
+            color:white;
+          }
+          #mepic{
+                position:relative;
+                left:40%;
                 width:20%;
+            }
+          #button1{
+                position:absolute;
+                top:37%;
+                left:41%;
+                width:20%;
+                height:50px;
+                font-size: 30px
+            }
+          #about{
+            text-align:center;
             }
         </style>
     </head>
     <body>
-        <h1 id = "greeting">
-          Hey, I'm Rohan!
-        </h1>
-        <img id="mepic" src="https://github.com/rohanralli/rohanralli.github.io/assets/136884308/888e824d-6283-4bf3-ac30-04bc1c975e4c" />
+      <div class="video-wrapper">
+      <video playsinline autoplay muted loop poster="code">
+    <source src="https://github.com/rohanralli/rohanralli.github.io/assets/136884308/c1f693fb-3736-40c2-9fcb-41c04a75acc1">
+</video>
+      </div>
+      <div>
         
+      
+        <h1 id = "greeting">
+          Hey, I'm
+        </h1>
+        <button id = "button1" type="button" onclick="changeDescription()">Rohan!</button>
+        <img id="mepic" src="https://github.com/rohanralli/rohanralli.github.io/assets/136884308/a5ce4a59-51ac-45de-ab81-9a06c4d3ce93" />
         <h1>
           About Me
         </h1>
+        <p id = "about">
+          As an aspiring Computer Science major with focus on Machine Learning/Artificial Intelligence, <br> I eagerly look forward to pursuing my bachelor's degree from an institution of higher studies<br>
+          that will not only equip me with the knowledge and skills necessary
+          to push<br>  the outer realm of the world of technology but also help me give back to the community.
+        </p>
         <h1>
           Education
         </h1>
         <h1>
-          Clubs/Organizations
+          Organizations/Extracurriculars
         </h1>
+        <h1>
+          Awards/Certifications
+        </h1>
+        <h1>
+          Test Scores
+        </h1>
+        <h1>
+          Work Experience
+        </h1>
+        </div>
     </body>
 </html>
