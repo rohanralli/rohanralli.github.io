@@ -22,7 +22,7 @@
         <style>
           video {
                 object-fit: cover;
-                height: 100%;
+                height: 600px;
                 width: 100%;
                 position: absolute;
                 top: 0;
@@ -63,7 +63,8 @@
             color:white;
           }
           #mepic{
-                position:relative;
+                position:absolute;
+                top:650px;
                 left:40%;
                 width:20%;
             }
@@ -75,6 +76,11 @@
                 height:50px;
                 font-size: 30px
             }
+          #clickMe{
+                position:absolute;
+                top:40%;
+                left:41%;
+          }
           #about{
             text-align:center;
             }
@@ -86,6 +92,19 @@
             font-weight:bold;
           }
           #orgs{
+            text-align:center;
+          }
+          #workExp{
+            text-align:center;
+            line-height:30px;
+          }
+          .wExpTitle{
+            font-weight:bold;
+          }
+          #scores{
+            text-align:center;
+          }
+          #awards{
             text-align:center;
           }
         </style>
@@ -103,6 +122,10 @@
           Hey, I'm
         </h1>
         <button id = "button1" type="button" onclick="changeDescription()">Rohan!</button>
+        <p id = "clickMe">
+          Click me!
+        </p>
+          
         <img id="mepic" src="https://github.com/rohanralli/rohanralli.github.io/assets/136884308/a5ce4a59-51ac-45de-ab81-9a06c4d3ce93" />
         <h1>
           About Me
@@ -120,7 +143,7 @@
         </h3> 
         <p id = "education">
           Grade: 12 <br>
-          GPA : 4.0/4.0 <br>  SAT Score: 1590 <br> 
+          GPA : 4.0/4.0 <br>  FISD Gifted and Talented Program <br> 
         </p>
         <h1>
           Organizations/Extracurriculars
@@ -129,14 +152,48 @@
           CodeWorld(Founder), Computer Science Club, Robotics (Co-Captain), Choir (President), <br> Chess (Vice President), National Honors Society, National Spanish Honors Society
         </p>
         <h1>
-          Awards/Certifications
+          Awards
         </h1>
+        <p id = "awards">
+          2024 National Merit Scholarship Program Semifinalist - 12<br>
+          AP Scholar with distinction – 11<br>
+          3x Honor Roll – 9, 10, 11<br>
+          1st place in VEX ausTIN CANS Tipping Point Robotics regional competition (State Qualifier) - 10<br>
+          Semi-Finalist at ‘For the Love of BOTS’ VEX Robotics regional competition - 11<br>
+          Placed 14th at  Area (State) –  Texas All State Choir competition– 11<br>
+          Top 20 at Area (State)  – Texas All State Choir competition – 10, 11<br>
+          2nd Chair for pre-area round – Texas All State Choir competition – 11<br>
+          3-Time All Region Choir - 9, 10, 11<br>
+          Highest rating (Superior +) by judges at TMEA Solo Contest competition - 9<br>
+          6 times Gold Medalist in Annual Piano Music Theory Exams<br>
+          6 times Piano Superior+ rating in Sonatina, American, Fall festivals<br>
+          Inducted in National Honor Society and National Spanish Honor Society based on academic excellence and community service.<br>
+          Presidential Award - 8<br>
+        </p>
         <h1>
           Test Scores
         </h1>
+        <p id = "scores">
+          SAT Score: 1590<br>          
+          AP Calculus AB- Score: 5/5 · May 2023<br>
+          AP English Language and Composition- Score: 5/5 · May 2023<br>
+          AP Physics 1- Score: 5/5 · May 2023<br>
+          AP US History- Score: 4/5 · May 2023 <br>         
+          AP Computer Science A- Score: 5/5 · May 2022<br>
+          AP World History- Score: 5/5 · May 2022<br>
+        </p>
         <h1>
           Work Experience
         </h1>
+        <p id = "workExp">
+          <span class = "wExpTitle">Kumon / Paid Tutor / March 2022 – May 2022</span><br>
+          Taught fundamentals of Math and English to kids age 5 to 16 / 5 hours/week – 12 weeks/year<br>
+          <span class = "wExpTitle">Dairy Queen/ Paid front office team member / May 2022 – July 2022</span><br>
+          Supported DQ staff in administrative activities / 8 hours/week -- 12 weeks/year<br>
+          <span class = "wExpTitle">Chick-Fill-A / Paid back-office team member / July 2022 – November 2022</span><br>
+          Supported staff in accurate and speedy order fulfillment and delivery / 5 hours/week -- 12 weeks<br>
+
+        </p>
         </div>
     </body>
 </html>
