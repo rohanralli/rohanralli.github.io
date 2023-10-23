@@ -61,8 +61,8 @@
           #greeting{
             position:absolute;
             text-align:center;
-            top:30%;
-            left:47%;
+            top:14vw;
+            left:45%;
             color:white;
           }
           #mepic{
@@ -73,8 +73,8 @@
             }
           #button1{
                 position:absolute;
-                top:38%;
-                left:41%;
+                top:20vw;
+                left:40%;
                 width:20%;
                 height:50px;
                 font-size: 30px
@@ -85,7 +85,11 @@
                 left:41%;
           }
           #about{
+            position: relative;
+            left:27.5%;
             text-align:center;
+            background-color: rgb(64,224,208);
+            width: 45%;
             }
           #education{
             position: relative;
@@ -94,7 +98,7 @@
             background-color: rgb(64,224,208);
             width: 20%;
             }
-          #edHead{
+          .header{
             font-size:33px;
           }
           #schoolName{
@@ -102,7 +106,11 @@
             font-weight:bold;
           }
           #orgs{
+            position: relative;
+            left:30%;
             text-align:center;
+            background-color: rgb(64,224,208);
+            width: 40%;
           }
           #workExp{
             text-align:center;
@@ -115,7 +123,11 @@
             text-align:center;
           }
           #awards{
+            position: relative;
+            left:30%;
             text-align:center;
+            background-color: rgb(64,224,208);
+            width: 40%;
           }
         </style>
     </head>
@@ -137,16 +149,18 @@
         </p>
           
         <img id="mepic" src="https://github.com/rohanralli/rohanralli.github.io/assets/136884308/a5ce4a59-51ac-45de-ab81-9a06c4d3ce93" />
-        <h1>
+        <section id = "about">
+        <h1 class = "header">
           About Me
         </h1>
-        <p id = "about">
+        <p>
           As an aspiring Computer Science major with focus on Machine Learning/Artificial Intelligence, <br> I eagerly look forward to pursuing my bachelor's degree from an institution of higher studies<br>
           that will not only equip me with the knowledge and skills necessary
           to push<br>  the outer realm of the world of technology but also help me give back to the community.
         </p>
+          </section>
         <section id = "education">
-        <h1 id = "edHead">
+        <h1 class = "header">
           Education
         </h1>
         <h3 id = "schoolName">
@@ -157,16 +171,19 @@
           GPA : 4.0/4.0 <br>  FISD Gifted and Talented Program <br> 
         </p>
         </section>
-        <h1>
+        <section id = "orgs">
+        <h1 class = "header">
           Organizations/Extracurriculars
         </h1>
-        <p id = "orgs">
+        <p>
           CodeWorld(Founder), Computer Science Club, Robotics (Co-Captain), Choir (President), <br> Chess (Vice President), National Honors Society, National Spanish Honors Society
         </p>
-        <h1>
+        </section>
+        <section id = "awards">
+        <h1 class = "header">
           Awards
         </h1>
-        <p id = "awards">
+        <p>
           2024 National Merit Scholarship Program Semifinalist - 12<br>
           AP Scholar with distinction – 11<br>
           3x Honor Roll – 9, 10, 11<br>
@@ -182,7 +199,8 @@
           Inducted in National Honor Society and National Spanish Honor Society based on academic excellence and community service.<br>
           Presidential Award - 8<br>
         </p>
-        <h1>
+        </section>
+        <h1 class = "header">
           Test Scores
         </h1>
         <p id = "scores">
@@ -194,7 +212,7 @@
           AP Computer Science A- Score: 5/5 · May 2022<br>
           AP World History- Score: 5/5 · May 2022<br>
         </p>
-        <h1>
+        <h1 class = "header">
           Work Experience
         </h1>
         <p id = "workExp">
